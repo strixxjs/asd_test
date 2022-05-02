@@ -1,5 +1,7 @@
 let darkMode = false;
 let dateNow = new Date();
+// let day = getElementByClassName("date__daysItem");
+
 
 const monthMilliseconds = 2692000000;
 const yearMilliseconds = monthMilliseconds * 12;
@@ -87,7 +89,12 @@ function toggleDatePicker() {
 document.getElementById("dateinput").addEventListener("click", toggleDatePicker);
 
 function selectDate(event) {
-    
+    if (event.target.tagName == "P"){
+        console.log(event.target.innerHTML);
+    }
+    let newDay = event.target.innerHTML;
+    dateNow = new Date(dateNow.getFullYear(),dateNow.getMonth(),newDay);
+    document.getElementById("dateinput_time").innerHTML = `${dateNow.getFullYear()}/${dateNow.getMonth()}/${dateNow.getDay()}`;
 }
 
 calendarBuilder();

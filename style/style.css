@@ -14,7 +14,9 @@ p {
 }
 
 .dateinput {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 490px;
     height: 70px;
@@ -178,4 +180,9 @@ input[type="checkbox"]:checked ~ .check:after {
 
 .hidden {
     display: none;
+}
+
+.date__footerTitleText {
+    margin-right: 10px;
+    margin-bottom: 5px;
 }

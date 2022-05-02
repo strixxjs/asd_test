@@ -60,7 +60,7 @@ document.getElementById("addOneMonth").addEventListener("click", addOneMonth);
 function substractOneMonth() {
     dateNow = new Date(dateNow.getTime() - monthMilliseconds);
     // debugger;
-    document.getElementById("month").innerHTML = dateNow.getMonth();
+    document.getElementById("month").innerHTML = MONTHS[dateNow.getMonth()];
 }
 
 document.getElementById("substractOneMonth").addEventListener("click", substractOneMonth); 

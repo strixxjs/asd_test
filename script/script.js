@@ -4,6 +4,9 @@ let dateNow = new Date();
 const monthMilliseconds = 2692000000;
 const yearMilliseconds = monthMilliseconds * 12;
 
+const MONTHS = ["January", "February", "March", "April", "May", 
+"June", "July", "August", "September", "October", "November", "December"];
+
 function toggleDarkMode () {
     const date = document.querySelector(".date");
     const wasCheck = darkMode === true;
@@ -43,10 +46,11 @@ function calendarBuilder () {
 }
 
 
+
 function addOneMonth() {
     dateNow = new Date(dateNow.getTime() + monthMilliseconds);
     // debugger;
-    document.getElementById("month").innerHTML = dateNow.getMonth();
+    document.getElementById("month").innerHTML = MONTHS[dateNow.getMonth()];
 }
 
 document.getElementById("addOneMonth").addEventListener("click", addOneMonth); 
@@ -75,4 +79,23 @@ function substractOneYear() {
 
 document.getElementById("substractOneYear").addEventListener("click", substractOneYear);   
 
+function toggleDatePicker() {
+    document.getElementById("date").classList.toggle("hidden");
+    // debugger;
+}
+
+document.getElementById("dateinput").addEventListener("click", toggleDatePicker);
+
+function selectDate(event) {
+    
+}
+
 calendarBuilder();
+
+[...document.getElementsByClassName("date__daysItem")].forEach(
+    (element, index, array) => {
+        // debugger;
+        element.addEventListener("click", selectDate);
+    }
+);
+

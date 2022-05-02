@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,42 +11,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="date">
+    <div class="dateinput" id="dateinput">
+        <p>20/11/1991</p>
+        <div>📅</div>
+    </div>
+    <div class="date" id = "date">
         <div class="date__controler">
             <div class="date__month">
-                <div class="date__button" id = "substractOneMonth"> < </div>
-                <p class="date__text" id = "month">February</p>
-                <div class="date__button" id = "addOneMonth"> > </div>
+                <div class="date__button" id="substractOneMonth">
+                    < </div>
+                        <p class="date__text" id="month">February</p>
+                        <div class="date__button" id="addOneMonth"> > </div>
+                </div>
+                <div class="date__year">
+                    <div class="date__button" id="substractOneYear">
+                        <
+                         </div>
+                            <p class="date__text" id="years"> 2022 </p>
+                            <div class="date__button" id="addOneYear"> > </div>
+                    </div>
+                </div>
+                <div class="date__week">
+                    <div class="date__weekDay">
+                        <p>Mon</p>
+                    </div>
+                    <div class="date__weekDay">
+                        <p>Tue</p>
+                    </div>
+                    <div class="date__weekDay">
+                        <p>Wed</p>
+                    </div>
+                    <div class="date__weekDay">
+                        <p>Thu</p>
+                    </div>
+                    <div class="date__weekDay">
+                        <p>Fri</p>
+                    </div>
+                    <div class="date__weekDay">
+                        <p>Sat</p>
+                    </div>
+                    <div class="date__weekDay">
+                        <p>Sun</p>
+                    </div>
+                </div>
+                <div class="date__days" id="days">
+                </div>
+                <div class="date__footer">
+                    <div class="date__footerTitle">
+                        <p>Dark mode</p>
+                    </div>
+                    <label>
+                        <input type="checkbox">
+                        <span class="check" id="check"></span>
+                    </label>
+                </div>
             </div>
-            <div class="date__year">
-                <div class="date__button" id = "substractOneYear"> < </div>
-                <p class = "date__text" id = "years"> 2022 </p>
-                <div class="date__button"id="addOneYear"> > </div>
-            </div>
-        </div>
-        <div class="date__week">
-            <div class="date__weekDay"><p>Mon</p></div>
-            <div class="date__weekDay"><p>Tue</p></div>
-            <div class="date__weekDay"><p>Wed</p></div>
-            <div class="date__weekDay"><p>Thu</p></div>
-            <div class="date__weekDay"><p>Fri</p></div>
-            <div class="date__weekDay"><p>Sat</p></div>
-            <div class="date__weekDay"><p>Sun</p></div>
-        </div>
-        <div class="date__days" id="days">
-        </div>
-        <div class="date__footer">
-            <div class="date__footerTitle">
-                <p>Dark mode</p>
-            </div>
-            <label>
-                <input type="checkbox">
-                <span class="check" id="check"></span>
-            </label>
-        </div>
-    </div>
-
-<script src="script/script.js"></script>
+            <script src="script/script.js"></script>
 </body>
+
 </html>

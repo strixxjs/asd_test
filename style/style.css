@@ -4,12 +4,21 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
 
 
 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     color: white;
 }
 
@@ -20,7 +29,7 @@ p {
     width: 100%;
     max-width: 490px;
     height: 70px;
-    background-color: #ffce00;
+    background-color: grey;
     cursor: pointer;
 }
 
@@ -67,7 +76,6 @@ p {
     width: 50px;
     height: 70px;
     font-size: 35px;
-
     cursor: pointer;
 }
 
@@ -94,9 +102,6 @@ p {
 }
 
 .date__daysItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 70px;
     height: 70px;
     font-size: 20px;
@@ -133,7 +138,7 @@ input[type="checkbox"] {
     display: block;
     width: 40px;
     height: 20px;
-    background-color: #092c3e;
+    background-color: #000000;
     cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
@@ -141,7 +146,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked ~ .check {
-    background-color: #fff;
+    background-color: #1D175A;
     box-shadow: 0 0  1200px pink;
 }
 
@@ -166,7 +171,7 @@ input[type="checkbox"]:checked ~ .check:before {
     position: absolute;
     top: 2px;
     right: 2px;
-    background: #092c3e;
+    background: #fff;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -183,6 +188,6 @@ input[type="checkbox"]:checked ~ .check:after {
 }
 
 .date__footerTitleText {
-    margin-right: 10px;
-    margin-bottom: 5px;
+    /* margin-right: 5px;
+    margin-bottom: 5px; */
 }

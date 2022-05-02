@@ -94,7 +94,7 @@ function selectDate(event) {
     }
     let newDay = event.target.innerHTML;
     dateNow = new Date(dateNow.getFullYear(),dateNow.getMonth(),newDay);
-    document.getElementById("dateinput_time").innerHTML = `${dateNow.getFullYear()}/${dateNow.getMonth()}/${dateNow.getDay()}`;
+    document.getElementById("dateinput_time").innerHTML = `${dateNow.getDay() + 1}/${dateNow.getMonth() + 1}/${dateNow.getFullYear()}`;
 }
 
 calendarBuilder();
